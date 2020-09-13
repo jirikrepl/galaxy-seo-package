@@ -15,6 +15,11 @@ serviceUrl = process.env.PRERENDERIO_SERVICE_URL || serviceUrl;
 if (token) {
   if (serviceUrl) prerenderio.set('prerenderServiceUrl', serviceUrl);
   prerenderio.set('prerenderToken', token);
+
+  prerenderio.crawlerUserAgents.push('Mediapartners-Google');
+  prerenderio.crawlerUserAgents.push('AdsBot-Google-Mobile');
+  prerenderio.crawlerUserAgents.push('AdsBot-Google');
+
   if (protocol) prerenderio.set('protocol', protocol);
 
   prerenderio.set('afterRender', function afterRender(error) {

@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'mdg:seo',
+  name: 'mdg:seo-jirikrepl',
   summary: 'Provide SEO support for enabled apps.',
   version: '3.2.2',
-  git: 'https://github.com/meteor/galaxy-seo-package',
+  git: 'https://github.com/jirikrepl/galaxy-seo-package',
 });
 
 Npm.depends({
